@@ -9370,7 +9370,7 @@ For example:
     shared_ptr<Widget> sp1(new Widget(a, b)); // Better, but messy
     fun(sp1, new Widget(c, d));
 
-The best solution is to avoid explicit allocation entirely use factory functions that return owning objects:
+The best solution is to avoid explicit allocation entirely and use factory functions that return owning objects:
 
     fun(make_shared<Widget>(a, b), make_shared<Widget>(c, d)); // Best
 
